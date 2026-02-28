@@ -1,0 +1,5 @@
+I used Spam Email Detection Data set
+Missing Values: The dataset had missing values only in an unwanted column, so it was dropped. The remaining features had no missing values, so no imputation method (mean/median/mode) was required. Dropping the irrelevant column helped maintain data quality without affecting performance.
+Categorical Encoding: Label Encoding was used because the categorical features (such as spam/ham) were binary and ordinal in nature. It worked efficiently without increasing dimensionality, unlike one-hot encoding.
+Feature Scaling: Z-score (Standardization) was applied for feature scaling. It performed well because it centers the data around mean 0 with standard deviation 1, which helps models like Logistic Regression and SVM perform better.
+Outlier Treatment & Skewness: Some numerical features were positively skewed, so log transformation was applied. This reduced skewness, stabilized variance, and improved model learning. Outlier treatment helped reduce extreme influence on the model.
